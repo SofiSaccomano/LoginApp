@@ -1,0 +1,58 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginApp.Pages.EsqueciSenha"
+             Title="Esqueci Senha"
+             BackgroundColor="#e8e6d6">
+
+    <VerticalStackLayout 
+        Margin="15"
+        Padding="15"
+        Spacing="10"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="CenterAndExpand">
+
+        <Image HeightRequest="250" WidthRequest="350" Source="logo.png"/>
+        <Label 
+            Text="Recuperar Senha"
+            TextColor="Black"
+            FontSize="Title"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+
+        <Label 
+            Text="Email"
+            TextColor="Black"
+            FontSize="Subtitle"/>
+
+        <!-- Campo Email arredondado -->
+        <Frame CornerRadius="15" BackgroundColor="#c1a88b" Padding="0" HasShadow="False">
+            <Entry x:Name="txtEmail"
+                   Placeholder="Digite seu Email"
+                   Keyboard="Email"
+                   BackgroundColor="Transparent"/>
+        </Frame>
+
+        <!-- Botão Enviar -->
+        <Button 
+            Text="Enviar"
+            TextColor="Black"
+            WidthRequest="250"
+            x:Name="btnEnviar"
+            Clicked="btnEnviar_Clicked"
+            BackgroundColor="#c1a88b"
+            CornerRadius="15"
+            Margin="0,10,0,0"/>
+
+        <!-- Botão Voltar -->
+        <Button 
+            Text="Voltar"
+            TextColor="Black"
+            WidthRequest="250"
+            x:Name="btnVoltar"
+            Clicked="btnVoltar_Clicked"
+            BackgroundColor="#c1a88b"
+            CornerRadius="15"
+            Margin="0,10,0,0"/>
+
+    </VerticalStackLayout>
+</ContentPage>

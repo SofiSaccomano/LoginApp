@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginApp.Pages.ProdutoDetalhesPage"
+             BackgroundColor="#f5f5dc"
+             Title="Detalhes do Produto"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- Nome do Produto -->
+            <Label x:Name="lblProdutoNome"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="Black"/>
+
+            <!-- Imagem -->
+            <Image x:Name="imgProduto"
+                   HeightRequest="250"
+                   WidthRequest="250"
+                   Aspect="AspectFill"
+                   HorizontalOptions="Center"/>
+
+            <!-- Título -->
+            <Label Text="Modo de uso:"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="#95714f"
+                   Margin="0,15,0,0"/>
+
+            <!-- Descrição -->
+            <Label x:Name="lblModoUso"
+                   FontSize="16"
+                   TextColor="Black"
+                   LineBreakMode="WordWrap"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

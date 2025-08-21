@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginApp.Pages.EditaUsuarioPage"
+             Title="EditaUsuarioPage"
+             BackgroundColor="#e8e6d6">
+
+    <VerticalStackLayout 
+        Margin="5"
+        Padding="10"
+        Spacing="5"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="CenterAndExpand">
+
+        <Image HeightRequest="250" WidthRequest="350" Source="logo.png"/>
+
+        <Label 
+            Text="Faça seu Cadastro"
+            TextColor="Black"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontSize="Title"/>
+
+        <Label 
+            x:Name="lblNome"
+            Text="Nome"
+            TextColor="Black"
+            FontSize="Subtitle"/>
+
+        <!-- Campo Nome arredondado -->
+        <Frame CornerRadius="15" BackgroundColor="#c1a88b" Padding="0" HasShadow="False">
+            <Entry 
+                x:Name="txtNome"
+                Text="{Binding Nome}"
+                Placeholder="Digite seu Nome"
+                Keyboard="Text"
+                BackgroundColor="Transparent"/>
+        </Frame>
+
+        <Label 
+            x:Name="lblEmail"
+            Text="Email"
+            TextColor="Black"
+            FontSize="Subtitle"/>
+
+        <!-- Campo Email arredondado -->
+        <Frame CornerRadius="15" BackgroundColor="#c1a88b" Padding="0" HasShadow="False">
+            <Entry
+                x:Name="txtEmail"
+                Text="{Binding Email}"
+                Placeholder="Digite seu Email"
+                Keyboard="Email"
+                BackgroundColor="Transparent"/>
+        </Frame>
+
+        <Label 
+            x:Name="lblSenha"
+            FontSize="Subtitle"
+            Text="Senha"
+            TextColor="Black"/>
+
+        <!-- Campo Senha arredondado -->
+        <Frame CornerRadius="15" BackgroundColor="#c1a88b" Padding="0" HasShadow="False">
+            <Entry 
+                Placeholder="Digite sua Senha"
+                x:Name="txtSenha"
+                Text="{Binding Senha}"
+                IsPassword="True"
+                BackgroundColor="Transparent"/>
+        </Frame>
+
+        <!-- Botões arredondados com espaçamento -->
+        <Button 
+            Text="Cadastrar"
+            TextColor="Black"
+            WidthRequest="250"
+            x:Name="btnCadastrar"
+            Clicked="btnCadastrar_Clicked"
+            BackgroundColor="#c1a88b"
+            CornerRadius="15"
+            Margin="0,10,0,0"/>
+
+        <Button 
+            Text="Voltar"
+            TextColor="Black"
+            WidthRequest="250"
+            x:Name="btnVoltar"
+            Clicked="btnVoltar_Clicked"
+            BackgroundColor="#c1a88b"
+            CornerRadius="15"
+            Margin="0,10,0,0"/>
+
+    </VerticalStackLayout>
+</ContentPage>

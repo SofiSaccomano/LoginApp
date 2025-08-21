@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginApp.Pages.LoginUsuarioPage"
+             Title="LoginUsuarioPage"
+             NavigationPage.HasNavigationBar="False"    
+             BackgroundColor="#e8e6d6">
+    <VerticalStackLayout Margin="15"
+                         Padding="15"
+                         Spacing="5">
+        <Image HeightRequest="250" WidthRequest="350" Source="logo.png"/>
+
+        <Label Text="Faça seu Login"
+               TextColor="Black"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="Title"/>
+
+
+        <Label x:Name="lblEmail"
+               Text="Email"
+               TextColor="Black"
+               FontSize="Subtitle"/>
+
+        <Frame CornerRadius="15" 
+               BackgroundColor="#c1a88b" 
+               Padding="0" 
+               HasShadow="False">
+            <Entry x:Name="txtEmail"
+                   Placeholder="Digite seu Email"
+                   Keyboard="Email" 
+                   BackgroundColor="Transparent"/>
+        </Frame>
+
+
+        <Label x:Name="lblSenha"
+               FontSize="Subtitle"
+               Text="Senha"
+               TextColor="Black"/>
+
+        <!--   Senha Estilizada  -->
+        <Frame CornerRadius="15" BackgroundColor="#c1a88b" Padding="0" HasShadow="False">
+            <Grid>
+                <Entry x:Name="txtSenha"
+                       IsPassword="True"
+                       Placeholder="Digite sua senha"
+                       BackgroundColor="Transparent"
+                       Margin="10,0,50,0"/>
+                <!-- deixa espaço para o botão do olho -->
+
+                <ImageButton x:Name="btnToggleSenha"
+                             Source="eye.png"
+                             Clicked="btnToggleSenha_Clicked"
+                             BackgroundColor="Transparent"
+                             WidthRequest="40"
+                             HeightRequest="40"
+                             HorizontalOptions="End"
+                             VerticalOptions="Center"
+                             Margin="0,0,10,0"/>
+            </Grid>
+        </Frame>
+
+
+
+        <Button Text="Entrar"
+                TextColor="Black"
+                WidthRequest="250"
+                x:Name="btnEntrar"
+                Clicked="btnEntrar_Clicked"
+                BackgroundColor="#c1a88b"
+                CornerRadius="15"
+                Margin="0,10,0,0"/>
+
+        <Button Text="Registrar"
+                TextColor="Black"
+                WidthRequest="250"
+                x:Name="btnRegistrar"
+                Clicked="btnRegistrar_Clicked"
+                BackgroundColor="#c1a88b"
+                CornerRadius="15"
+                Margin="0,10,0,0"/>
+
+        <Button    
+            Text="Esqueci minha senha"
+            TextColor="{AppThemeBinding Light=Black, Dark=Black}"
+            WidthRequest="250"
+            x:Name="btnEsqueci"
+            Clicked="btnEsqueci_Clicked"
+            BackgroundColor="Transparent"
+            CornerRadius="15"
+            Margin="0,10,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>

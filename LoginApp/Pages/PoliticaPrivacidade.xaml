@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginApp.Pages.PoliticaPrivacidade"
+             BackgroundColor="#d6d6bd"
+             Title="Política e Privacidade"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <VerticalStackLayout Margin="15"
+                         Padding="15"
+                         Spacing="5">
+            <Image HeightRequest="250" WidthRequest="350" Source="logo.png"/>
+            <!-- Logo / Título -->
+
+
+            <!-- Subtítulo -->
+            <Label Text="POLÍTICA E PRIVACIDADE"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+
+            <!-- Texto -->
+            <Label Text="•Coleta de dados: coletamos apenas dados básicos fornecidos por você (nome, e-mail, tipo de pele, etc) e dados de uso do app. "
+                   FontSize="16"
+                   TextColor="Black"
+                   LineBreakMode="WordWrap"/>
+            <Label Text="• Não coletamos informações sensíveis sem seu consentimento."
+               FontSize="16"
+               TextColor="Black"
+               LineBreakMode="WordWrap" />
+            <Label Text="• Uso das informações: usamos seus dados para personalizar sua experiência, oferecer recomendações de skincare, melhorar o app e, se autorizado, enviar comunicações."
+               FontSize="16"
+               TextColor="Black"
+               LineBreakMode="WordWrap" />
+            <Label Text="• Compartilhamento: não vendemos seus dados. Compartilhamos apenas com serviços essenciais para o funcionamento do app ou quando exigido por lei."
+                FontSize="16"
+                TextColor="Black"
+                LineBreakMode="WordWrap" />
+            <Label Text="• Segurança: protegemos seus dados com medidas de segurança adequadas e servidores seguros. "
+                   FontSize="16"
+                   TextColor="Black"
+                   LineBreakMode="WordWrap" />
+            <Label Text="• Segurança: protegemos seus dados com medidas de segurança adequadas e servidores seguros. "
+                   FontSize="16"
+                   TextColor="Black"
+                   LineBreakMode="WordWrap" />
+            <Label Text="• Seus direitos: você pode acessar, corrigir, excluir seus dados ou encerrar sua conta a qualquer momento. Basta entrar em contato com o suporte.
+"
+                   FontSize="16"
+                   TextColor="Black"
+                   LineBreakMode="WordWrap" />
+            <Label Text="• Tecnologias: podemos usar cookies ou tecnologias similares para melhorar sua experiência no app.
+"
+                   FontSize="16"
+                   TextColor="Black"
+                   LineBreakMode="WordWrap" />
+            <Label Text="• Atualizações: a política pode ser atualizada, e você será avisado sempre que isso acontecer. "
+                   FontSize="16"
+                   TextColor="Black"
+                   LineBreakMode="WordWrap" />
+            <!-- Botão Home -->
+            <Button Text="HOME"
+                    BackgroundColor="#b1885a"
+                    TextColor="Black"
+                    CornerRadius="15"
+                    WidthRequest="100"
+                    HorizontalOptions="Center"
+                    Clicked="HomeButton_Clicked"/>
+
+            <ImageButton Source="perfilicon.png"
+             WidthRequest="80"
+             HeightRequest="80"
+             HorizontalOptions="End"
+             VerticalOptions="Start"
+             Margin="0,20,20,0"
+             Clicked="PerfilButton_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+
+
+
+

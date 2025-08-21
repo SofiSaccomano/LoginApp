@@ -1,0 +1,84 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginApp.Pages.PerfilPage"
+             BackgroundColor="#d6d6bd"
+             Title="Perfil">
+
+    <VerticalStackLayout 
+        Padding="20" Spacing="20"
+        HorizontalOptions="Center"
+        VerticalOptions="Center">
+
+        <!-- Card -->
+        <Frame BackgroundColor="#a3a383"
+               Padding="20"
+               CornerRadius="15"
+               WidthRequest="300"
+               HasShadow="False">
+
+            <VerticalStackLayout Spacing="15"
+                                  HorizontalOptions="Center">
+
+                <!-- Foto -->
+                <Frame BackgroundColor="#8b6b4a"
+                       WidthRequest="60"
+                       HeightRequest="60"
+                       CornerRadius="30"
+                       HasShadow="False"
+                       HorizontalOptions="Center">
+                    <Image Source="user_icon.png"
+                           WidthRequest="30"
+                           HeightRequest="30"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"/>
+                </Frame>
+
+                <!-- Nome -->
+                <Label Text="{Binding Nome}"
+                       FontSize="16"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="Black"/>
+
+                <!-- "Seus Dados" -->
+                <Frame BackgroundColor="#8b6b4a"
+                       Padding="5"
+                       CornerRadius="15"
+                       HasShadow="False"
+                       HorizontalOptions="Center">
+                    <Label Text="SEUS DADOS"
+                           TextColor="White"
+                           FontSize="12"
+                           HorizontalTextAlignment="Center"/>
+                </Frame>
+
+                <!-- Email -->
+                <Label Text="{Binding Email}"
+                       TextColor="Black"
+                       FontSize="12"
+                       HorizontalOptions="Center"/>
+
+                <!-- Botões -->
+                <VerticalStackLayout Spacing="8">
+                    <Button Text="HOME"
+                            BackgroundColor="#8b6b4a"
+                            TextColor="White"
+                            CornerRadius="15"
+                            HeightRequest="20"
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            Clicked="ButtonHome_Clicked"/>
+                    <Button Text="SAIR"
+                            BackgroundColor="#8b6b4a"
+                            TextColor="White"
+                            CornerRadius="15"
+                            HeightRequest="20"
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            Clicked="Button_Clicked"/>
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>
