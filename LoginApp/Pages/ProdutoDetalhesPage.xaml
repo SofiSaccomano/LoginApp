@@ -26,7 +26,6 @@
             <!-- Título -->
             <Label Text="Modo de uso:"
                    FontSize="20"
-                   FontAttributes="Bold"
                    TextColor="#95714f"
                    Margin="0,15,0,0"/>
 
@@ -35,6 +34,16 @@
                    FontSize="16"
                    TextColor="Black"
                    LineBreakMode="WordWrap"/>
+
+            <Button Text="VOLTAR"
+                    BackgroundColor="#b8a88b"
+                    TextColor="White"
+                    CornerRadius="15"
+                    HeightRequest="40"
+                    WidthRequest="150"
+                    HorizontalOptions="Center"
+                    Margin="0,20,0,0"
+                    Clicked="Button_OnVoltarClicked"/>
 
         </VerticalStackLayout>
     </ScrollView>

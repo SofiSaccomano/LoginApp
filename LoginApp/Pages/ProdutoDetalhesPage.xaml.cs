@@ -47,6 +47,13 @@ namespace LoginApp.Pages
                     lblModoUso.Text = "Modo de uso não disponível.";
                     break;
             }
+
+
         }
+        private async void Button_OnVoltarClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ProdutoPage());
+        }
+
     }
 }

@@ -7,97 +7,109 @@
              NavigationPage.HasNavigationBar="False">
 
     <ScrollView>
-        <Grid Padding="10"
-              RowSpacing="15"
-              ColumnSpacing="15"
-              RowDefinitions="Auto,Auto,Auto"
-              ColumnDefinitions="*,*">
+        <VerticalStackLayout Padding="10" Spacing="20">
 
-            <!-- Produto 1 -->
-            <VerticalStackLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Center">
-                <Image Source="produto1.png" HeightRequest="250" Aspect="AspectFill"/>
-                <Button Text="MODO DE USO"
-                        BackgroundColor="#c8c8a8"
-                        TextColor="Black"
-                        FontAttributes="Bold"
-                        CornerRadius="15"
-                        Padding="5"
-                        WidthRequest="140"
-                        Clicked="OnModoDeUsoClicked"
-                        CommandParameter="Produto 1"/>
-            </VerticalStackLayout>
+            <!-- Grid com os produtos -->
+            <Grid RowSpacing="15"
+                  ColumnSpacing="15"
+                  RowDefinitions="Auto,Auto,Auto"
+                  ColumnDefinitions="*,*">
 
-            <!-- Produto 2 -->
-            <VerticalStackLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="Center">
-                <Image Source="produto2.png" HeightRequest="250" Aspect="AspectFill"/>
-                <Button Text="MODO DE USO"
-                        BackgroundColor="#c8c8a8"
-                        TextColor="Black"
-                        FontAttributes="Bold"
-                        CornerRadius="15"
-                        Padding="5"
-                        WidthRequest="140"
-                        Clicked="OnModoDeUsoClicked"
-                        CommandParameter="Produto 2"/>
-            </VerticalStackLayout>
+                <!-- Produto 1 -->
+                <VerticalStackLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Center">
+                    <Image Source="produto1.png" HeightRequest="250" Aspect="AspectFill"/>
+                    <Button Text="MODO DE USO"
+                            BackgroundColor="#c8c8a8"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            CornerRadius="15"
+                            Padding="5"
+                            WidthRequest="140"
+                            Clicked="OnModoDeUsoClicked"
+                            CommandParameter="Produto 1"/>
+                </VerticalStackLayout>
 
-            <!-- Produto 3 -->
-            <VerticalStackLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="Center">
-                <Image Source="produto3.png" HeightRequest="250" Aspect="AspectFill"/>
-                <Button Text="MODO DE USO"
-                        BackgroundColor="#c8c8a8"
-                        TextColor="Black"
-                        FontAttributes="Bold"
-                        CornerRadius="15"
-                        Padding="5"
-                        WidthRequest="140"
-                        Clicked="OnModoDeUsoClicked"
-                        CommandParameter="Produto 3"/>
-            </VerticalStackLayout>
+                <!-- Produto 2 -->
+                <VerticalStackLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="Center">
+                    <Image Source="produto2.png" HeightRequest="250" Aspect="AspectFill"/>
+                    <Button Text="MODO DE USO"
+                            BackgroundColor="#c8c8a8"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            CornerRadius="15"
+                            Padding="5"
+                            WidthRequest="140"
+                            Clicked="OnModoDeUsoClicked"
+                            CommandParameter="Produto 2"/>
+                </VerticalStackLayout>
 
-            <!-- Produto 4 -->
-            <VerticalStackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center">
-                <Image Source="produto4.png" HeightRequest="250" Aspect="AspectFill"/>
-                <Button Text="MODO DE USO"
-                        BackgroundColor="#c8c8a8"
-                        TextColor="Black"
-                        FontAttributes="Bold"
-                        CornerRadius="15"
-                        Padding="5"
-                        WidthRequest="140"
-                        Clicked="OnModoDeUsoClicked"
-                        CommandParameter="Produto 4"/>
-            </VerticalStackLayout>
+                <!-- Produto 3 -->
+                <VerticalStackLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="Center">
+                    <Image Source="produto3.png" HeightRequest="250" Aspect="AspectFill"/>
+                    <Button Text="MODO DE USO"
+                            BackgroundColor="#c8c8a8"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            CornerRadius="15"
+                            Padding="5"
+                            WidthRequest="140"
+                            Clicked="OnModoDeUsoClicked"
+                            CommandParameter="Produto 3"/>
+                </VerticalStackLayout>
 
-            <!-- Produto 5 -->
-            <VerticalStackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Center">
-                <Image Source="produto5.png" HeightRequest="250" Aspect="AspectFill"/>
-                <Button Text="MODO DE USO"
-                        BackgroundColor="#c8c8a8"
-                        TextColor="Black"
-                        FontAttributes="Bold"
-                        CornerRadius="15"
-                        Padding="5"
-                        WidthRequest="140"
-                        Clicked="OnModoDeUsoClicked"
-                        CommandParameter="Produto 5"/>
-            </VerticalStackLayout>
+                <!-- Produto 4 -->
+                <VerticalStackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center">
+                    <Image Source="produto4.png" HeightRequest="250" Aspect="AspectFill"/>
+                    <Button Text="MODO DE USO"
+                            BackgroundColor="#c8c8a8"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            CornerRadius="15"
+                            Padding="5"
+                            WidthRequest="140"
+                            Clicked="OnModoDeUsoClicked"
+                            CommandParameter="Produto 4"/>
+                </VerticalStackLayout>
 
-            <!-- Produto 6 -->
-            <VerticalStackLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="Center">
-                <Image Source="produto6.png" HeightRequest="250" Aspect="AspectFill"/>
-                <Button Text="MODO DE USO"
-                        BackgroundColor="#c8c8a8"
-                        TextColor="Black"
-                        FontAttributes="Bold"
-                        CornerRadius="15"
-                        Padding="5"
-                        WidthRequest="140"
-                        Clicked="OnModoDeUsoClicked"
-                        CommandParameter="Produto 6"/>
-            </VerticalStackLayout>
+                <!-- Produto 5 -->
+                <VerticalStackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Center">
+                    <Image Source="produto5.png" HeightRequest="250" Aspect="AspectFill"/>
+                    <Button Text="MODO DE USO"
+                            BackgroundColor="#c8c8a8"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            CornerRadius="15"
+                            Padding="5"
+                            WidthRequest="140"
+                            Clicked="OnModoDeUsoClicked"
+                            CommandParameter="Produto 5"/>
+                </VerticalStackLayout>
 
-        </Grid>
+                <!-- Produto 6 -->
+                <VerticalStackLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="Center">
+                    <Image Source="produto6.png" HeightRequest="250" Aspect="AspectFill"/>
+                    <Button Text="MODO DE USO"
+                            BackgroundColor="#c8c8a8"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            CornerRadius="15"
+                            Padding="5"
+                            WidthRequest="140"
+                            Clicked="OnModoDeUsoClicked"
+                            CommandParameter="Produto 6"/>
+                </VerticalStackLayout>
+            </Grid>
+
+            <!-- Botão HOME centralizado -->
+            <Button Text="HOME"
+                    BackgroundColor="#b8a88b"
+                    TextColor="White"
+                    CornerRadius="15"
+                    HeightRequest="40"
+                    WidthRequest="150"
+                    HorizontalOptions="Center"
+                    Clicked="ButtonHome_Clicked"/>
+        </VerticalStackLayout>
     </ScrollView>
 
 </ContentPage>

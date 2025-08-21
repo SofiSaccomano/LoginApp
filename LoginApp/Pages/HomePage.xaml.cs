@@ -9,6 +9,8 @@ namespace LoginApp.Pages
             InitializeComponent();
         }
 
+
+
         // Updated constructor call with required parameters
         private async void PerfilButton_Clicked(object sender, EventArgs e)
         {
